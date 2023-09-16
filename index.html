@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Geoportfolio</title>
+<!---bootstrap--->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<!---favicon---->
+<link rel="shortcut icon" type="image/png" href="globe.png">
+<!----font--->
+<link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+	</head>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Dosis", "sans-serif";
+}
+#nav-bar
+{
+	position: sticky;
+	top:0;
+	z-index: 10;
+}
+.navbar{
+
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	padding: 0 !important;
+}
+.navbar-brand img{
+	height: 40px;
+	padding-left: 20px;
+	
+}
+.navbar-nav li{
+	padding: 0 10px;
+}
+.navbar-nav li a{
+	color:#fff !important;
+	font-weight:600;
+	float: right;
+	text-align: left;
+}
+.fa-bars{
+	color:#fff;
+	font-size: 30px !important;
+}
+.navbar-toggler{
+	outline: none !important;
+}
+/*-------banner section------*/
+#banner
+{
+	background: #d6249f;
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	color: #fff;
+	padding-top: 5%;
+}
+.promo-title{
+	font-size:60px;
+	font-weight: 600;
+	margin-top:100px;	
+}
+.play-btn{
+	width:45px;
+	margin: 20px;
+}
+#banner a{
+	color: #fff;
+	text-decoration: none;
+}
+.bottom-img{
+	width:100%;
+	
+}
+.img-fluid{
+	margin-left: 50px;
+}
+.name{
+	font-size: 25px;
+}
+/*---about me---*/
+#aboutme{
+	padding: 80px 0;
+}
+.aboutme{
+	padding:20px;
+}
+.aboutme h4{
+	padding: 5px;
+	margin-top:20px;
+	text-transform: uppercase;
+}
+.title::before{
+	content:'';
+	background:#5d6fb2;
+	height:5px;
+	width:200px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	transform: translateY(63px);
+}
+.title::after{
+	content:'';
+	background:#5d6fb2;
+	height:10px;
+	width:50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:40px;
+	display: block;
+	transform: translateY(8px);
+}
+.btn button{
+	padding: 7px 30px;
+	margin-right: 15px;
+	outline: none;
+	border: 1px solid #5d6fb2;
+	border-radius: 20px;
+	cursor: pointer;
+	color:  #5d6fb2;
+	background: transparent;
+	
+}
+.btn .primary-btn{
+	background: linear-gradient(#5d6fb2, #5851DB);
+	box-shadow: 0 2px 15px rgba(50, 38, 103, 0.26);
+	color: #fff;
+}
+/*------project-----*/
+#project{
+	background:#f8f9fa;
+	padding-bottom:50px;
+	padding-top: 50px;
+}
+.about-title{
+	font-size:40px;
+	font-weight: 600;
+	margin-top:8%;
+}
+
+.container{
+	position: relative;
+	width: 100%;
+
+.text{
+	color: #5d6fb2;
+	font-size: 30px;
+	padding-left: 50px;
+}
+/*-------map section------*/
+#webmap{
+padding-top: 50px;
+margin-right: 350px;
+}
+
+/*-------portfolio section------*/
+.portfolio{
+	border-left: 4px solid #7b1798;
+	margin-top:50px;
+	margin-bottom: 50px;
+	margin-right: 1000px;
+}
+.container, .container-md, .container-sm {
+    max-width: 1300px;
+	}
+	/*-----social-media-section----*/
+#social-media{
+	background:#f8f9fa;
+	padding:100px 0;
+}
+#social-media p{
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+.social-icons img{
+	width: 60px;
+	transition: 0.5s;
+	margin: 0 14px;
+	
+}
+.social-icons a:hover img{
+	transform: translateY(-10px);
+}
+.navbar-icons img{
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+	margin-top:10px;
+	/*-----footer section-----*/
+}
+#footer{
+	background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	color:#fff;
+}
+.footer-img{
+	width:100%;
+}
+.footer-box{
+	padding:20px;
+}
+.footer-box img{
+	width:120px;
+	margin-bottom:20px;
+}
+.footer-box .fa{
+	margin-right: 8px;
+	font-size: 25px;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	padding-top:7px;
+	border-radius:2px;
+	background-image:linear-gradient(to right, #a517ba,#5f1782);
+}
+.footer-box .form-control{
+	box-shadow: none !important;
+	border: none;
+	border-radius: 0;
+	margin-top: 25px;
+	max-width: 250px;
+}
+.footer-box .btn-primary{
+	box-shadow: none !important;
+	border: none;
+	border-radius: 0;
+	margin-top: 30px;
+	background-image:linear-gradient(to right, #a517ba,#5f1782);
+	
+}
+hr{
+	background-color:#fff;
+}
+.copyright{
+	margin-bottom:0;
+	padding-bottom:20px;
+	text-align: center;
+}
+.webmap-link a:link, a:visited {
+  background-color: #f44336;
+  color: #E1306C;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.webmap-link a:hover, a:active {
+  background-color: purple;
+}
+
+
+</style>
+<body>
+<!-----navbar------>
+	<section id="nav-bar">
+	<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#"><img src="globe.png" alt="globe"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-bars"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+		<li class="nav-item">
+        <a class="nav-link" href="#top">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#aboutme">ABOUT ME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#project">PORTFOLIO</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#webmap">INDUSTRY EXPERIENCE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#portfolio">SKILLS AND PROFICIENCIES</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</section>
+<!------banner section------->
+<section id="banner">
+<div class="container">
+<div class="row">
+<div class="col-mid-6">
+<p class="promo-title"> <span style="color:#405DE6;">Geoportfolio</span></p>
+<p class="name">Kate Chan s3783650</p>
+</div>
+	<div class="col-md-6 text-center">
+<img src="map.png" alt="map" class="img-fluid">
+</div>
+</div>
+</div>
+	<svg class="bottom-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,32L40,26.7C80,21,160,11,240,42.7C320,75,400,149,480,165.3C560,181,640,139,720,144C800,149,880,203,960,208C1040,213,1120,171,1200,165.3C1280,160,1360,192,1400,208L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg> 
+</section>
+<!-----------About Me Section-------->
+	<section id="aboutme">
+	<div class="container text-center">
+	<h1 class="title" style="margin-top:10px;"><b>ABOUT ME</b></h1>
+	<div class="row text-center">
+	<div class="col-md-4 aboutme">
+	<img style="width: 100%; display: block; margin-left:auto;margin-right:auto;margin-top:20px;" src="me.jpg" alt= "me">
+		
+		</div>
+<p style="float:right;margin-top:90px;width:60%">I am in my final Honours semester of a Bachelor of Geospatial Science at RMIT. I am a GIS analyst who is passionate about the intersection between design and technology particularly through cartography. I believe geospatial data is powerful for communication and driving decision-making to solve real-world problems. Throughout my degree, I have explored deeply into the world of GIS including web mapping, remote sensing, programming and cartography. I have had professional experience interning with the Esri R&D Centre and Ausnet Services.</p>
+		</div>
+		<div class="btn"  ><br>
+					<button type="button" class="primary-btn" value="Open Window" onclick="window.open('https://www.rmit.edu.au/about/schools-colleges/science')">Email</button>
+					<button type="button" value="Open Window" onclick="window.open('https://www.linkedin.com/in/katechan13/')">Linkedin</button>
+				</div>
+		</div>
+	</section>
+<!-----Project----->
+	<section id="project">
+	<div class="container">
+		<h1 class="title text-center"><b>PORTFOLIO</b></h1>
+		<div class="row">
+			<h3 style="margin-left:520px;text-align:center;color:#5d6fb2">Cartography</h3>
+			
+	<p style="margin-left:40px;margin-top:20px;text-align:center">Below are three maps I created as part of the Cartography 2 classes. They involve using publicy available data such as the Australian Bureau of Statistics (ABS) Census data. The first map was a specific audience for the City of Melbourne. The second map was a thematic map of a demographic populating using ABS data and the third map was a free topic of our choice. </p>
+	</div>
+	<div class="container">
+	<h3 style="text-align:center">Melbourne Laneway Trail</h3>
+	<img style="width:50%;display: block;margin-left: auto;margin-right: auto;" class="photo" src="laneway.PNG" alt="Laneway Map">
+					</div><br>
+	<div class="container">
+	<h3 style="text-align:center">Singaporean Born Population</h3>
+	<img style="width:50%;display: block;margin-left: auto;margin-right: auto;" class="photo" src="singapore_map.png" alt="Singapore Map">
+					</div><br>
+	<div class="container">
+	<h3 style="text-align:center">Australian Places in Songs</h3>
+	<img style="width:70%;display: block;margin-left: auto;margin-right: auto;" class="photo" src="song_map.png" alt="Final Map">
+					</div><br>
+	<div class="container">
+	<h3 style="text-align:center">I've Been Everywhere Man</h3>
+	<img style="width:70%;display: block;margin-left: auto;margin-right: auto;" class="photo" src="johnny_cash.PNG" alt="Final Map">
+									</div>	<br>	
+	<h3 style="text-align:center;color:#5d6fb2">Distributed Mapping</h3>
+	<p style="margin-left:40px;margin-top:20px;text-align:center">Below is a dashboard created as part of the Distributed Mapping subject that also encompassed a website and web map made with Mapbox. </p>
+	<iframe width="1200" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+	src="https://rmituniversity.maps.arcgis.com/apps/opsdashboard/index.html#/50f18c14898a444e932616cdf79b7bad"></iframe>
+		</div>
+	</section>
+
+<!-----Industry Experience------->
+<section id= "webmap">
+<div class="container text-center">
+<h1 class="title text-center" style="margin-top:70px;"><b>INDUSTRY EXPERIENCE</b></h1>
+<h3 style="text-align:center;color:#5d6fb2">Esri R&D Centre</h3>
+<img style="width:20%;display: block;margin-left: auto;margin-right: auto;" class="photo" src="esri.svg" alt="Esri">
+					</div><br>
+<h3 style="text-align:center;color:#5d6fb2">Student Product Engineer 2021-2023 </h3>
+<p style="margin-left:100px;margin-top:20px;text-align:center">Participation in the delivery releases of Survey123 through collaborating with developers, designers, testers, and other stakeholders. Creating templates and samples for users of Survey123 and producing videos for users’ education. </p>
+<br> <center><iframe width="560" height="315" src="https://www.youtube.com/embed/Z4sOgx4xGuY?si=SSQZXieC_5WXMyCx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center></div><br>
+<h3 style="text-align:center;color:#5d6fb2">Ausnet Services</h3>
+<img style="width:20%;display: block;margin-left: auto;margin-right: auto;" class="photo" src="ausnet.jpg" alt="Ausnet">
+					</div><br>
+<h3 style="text-align:center;color:#5d6fb2">Undergraduate Spatial Analyst 2019-2021 </h3>
+<p style="margin-left:100px;margin-top:20px;text-align:center">Auditing and analysing LiDAR of powerlines to ensure networks are safe and compliant with a solution specifically designed for vegetation management in electricity networks. </p>
+<center><video  width="620" height="440" controls> <source src="lidar.mp4" alt="LiDAR"></video></center>
+					</div><br>
+</section>
+
+
+
+<!-----Skills and Proficiencies---->
+	<section id="portfolio">
+	<div class="container">
+	<h1 class="title text-center" style="margin-top:70px;"><b>SKILLS AND PROFICIENCIES</b></h1>
+<p>My skills include:</p>
+<ul><li>The Adobe Suite - Illustrator, Indesign and Premiere Pro</li>
+	 <li>Graphic Design</li>
+	<li>Cartographic Principles</li>
+<li> QGIS</li>
+<li>ArcGIS including ArcMap, ArcGIS Online, ArcGIS Pro and ArcGIS Survey123</li>
+<li> Web GIS</li>
+<li>Web Design: HTML & CSS</li>
+<li>SQL Database Management</li>
+<li> More information about my skills can be found on my <a href="https://www.linkedin.com/in/katechan13/">Linkedin.</a></li></ul>
+<br><br>
+
+</div>
+		</div>
+	</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</body>
+</html>
